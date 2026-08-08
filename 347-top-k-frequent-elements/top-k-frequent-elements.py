@@ -3,16 +3,8 @@ from collections import Counter
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        counter = {}
-        # for num in nums:
-        #     if num not in counter.keys():
-        #         counter[num] = 1
-        #     else:
-        #         counter[num] += 1
         counter = Counter(nums)
-        
 
-        
         pq = [(-value, key) for key, value in counter.items()]
         pq = sorted(pq)
 
