@@ -18,7 +18,6 @@ class Solution:
         """
         
         pq = [(-value, key) for key, value in counter.items()]
-        heapq.heapify(pq)
         pq = sorted(pq)
 
         mf = []
