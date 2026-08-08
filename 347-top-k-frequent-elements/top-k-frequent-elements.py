@@ -18,11 +18,9 @@ class Solution:
         """
         
         pq = [(-value, key) for key, value in counter.items()]
-        print("pq before:", pq)
         heapq.heapify(pq)
         pq = sorted(pq)
 
-        print("pq after:", pq)
         mf = []
         for tp in pq:
             mf.append(tp[-1])
