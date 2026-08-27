@@ -11,7 +11,6 @@ class MyCircularDeque:
             self.queue.appendleft(value)
             self.value += 1
             return True
-
         return False
         
 
@@ -20,7 +19,6 @@ class MyCircularDeque:
             self.queue.append(value)
             self.value += 1
             return True
-
         return False
 
     def deleteFront(self) -> bool:
@@ -28,7 +26,6 @@ class MyCircularDeque:
             self.queue.popleft()
             self.value -= 1
             return True
-
         return False
 
     def deleteLast(self) -> bool:
@@ -36,7 +33,6 @@ class MyCircularDeque:
             self.queue.pop()
             self.value -= 1
             return True
-            
         return False      
 
     def getFront(self) -> int:
